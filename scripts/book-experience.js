@@ -128,6 +128,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 showNotification('Por favor, rellena todos los campos', 'error');
                 return;
             }
+
+            if (cardNumber.length !== 16) {
+                showNotification('El número de tarjeta debe tener 16 dígitos', 'warning');
+                return;
+            }
+
+            if (cardCvv.length !== 3) {
+                showNotification('El CVV debe tener 3 dígitos', 'warning');
+                return;
+            }
+
         }
 
         step2.style.display = 'none';
