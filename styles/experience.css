@@ -1,0 +1,102 @@
+
+#experience{
+    height: 100vh;
+    background-color: var(--color-background-global);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience_container{
+    width: 80%;
+    height: 70%;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: var(--color-background-box);
+    border-radius: 20px;
+}
+
+.experience_registration{
+    width: 75%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+@keyframes colorShift {
+    0% {
+        color: var(--color-button2);
+    }
+    33% {
+        color: var(--color-popup);
+    }
+    66% {
+        color: var(--color-button1);
+    }
+    100% {
+        color: var(--color-button2);
+    }
+    
+}
+
+.slogan_experiencia{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: clamp(0.9rem, 1.9vw, 1.3rem);
+    animation: colorShift 3s infinite;
+    margin: 0;
+}
+
+.experience_registration_button{
+    padding: 10px;
+    border: 1px solid var(--color-background-box);
+    border-radius: 5px;
+    background-color: var(--color-button1);
+    color: var(--color-text2);
+    cursor: pointer;
+    box-shadow: 4px 4px 1px #000;
+    border-radius: 8px;
+    border: 1px solid #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.experience_registration_button:active{
+    box-shadow: inset 4px 4px 1px #000;
+}
+
+.imagen_laponia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+}
+
+
+@media screen and (max-width: 700px) {
+    .experience_container{
+        height: 90%;
+        flex-direction: column;
+        justify-content: center;
+    }  
+
+    .experience_registration{
+        width: 90%;
+    }
+
+    .slogan_experiencia{
+        width: 100%;
+    }
+}

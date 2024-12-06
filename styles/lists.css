@@ -1,0 +1,236 @@
+
+#lists{
+    height: 100vh;
+    background-color: var(--color-background-global);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lists_background{
+    width: 80%;
+    max-width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color-background-box);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.arreglo_tablet{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    width: 70%;
+}
+
+.search_container{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.search_lists{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+#search_name{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.search_btn{
+    padding: 10px;
+    border: 1px solid var(--color-background-box);
+    border-radius: 5px;
+    background-color: var(--color-button1);
+    color: var(--color-text2);
+    cursor: pointer;
+    box-shadow: 4px 4px 1px rgba(0, 0, 0);
+    border-radius: 8px;
+    border: 1px solid #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.search_btn:active{
+    box-shadow: inset 4px 4px 1px rgba(0, 0, 0);
+}
+
+.lists_container{
+    display: none;
+    width: 29%;
+    background-color: #f9e4b7; 
+    border: 1px solid #d4af37; 
+    border-radius: 10px; 
+    padding: 20px;
+    color: #b38b00; 
+    font-family: 'Georgia', serif; 
+    line-height: 1.5; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lists_container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 24px,
+        #c9b037 25px
+    ); 
+    z-index: 0;
+    pointer-events: none;
+    height: calc(100% + 600px);
+}
+
+.lists_container > * {
+    position: relative;
+    z-index: 1; 
+}
+
+.btn_listas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.goodlist_btn{
+    padding: 10px;
+    border: 1px solid var(--color-background-box);
+    border-radius: 5px;
+    background-color: var(--color-button1);
+    color: var(--color-text2);
+    cursor: pointer;
+    box-shadow: 4px 4px 1px rgba(0, 0, 0);
+    border-radius: 8px;
+    border: 1px solid #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.goodlist_btn:active{
+    box-shadow: inset 4px 4px 1px rgba(0, 0, 0);
+}
+
+.badlist_btn{
+    padding: 10px;
+    border: 1px solid var(--color-background-box);
+    border-radius: 5px;
+    background-color: var(--color-button2);
+    color: var(--color-text2);
+    cursor: pointer;
+    box-shadow: 4px 4px 1px rgba(0, 0, 0);
+    border-radius: 8px;
+    border: 1px solid #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.badlist_btn:active{
+    box-shadow: inset 4px 4px 1px rgba(0, 0, 0);
+}
+
+.titulo_niños{
+    margin-block-start: 0.5em;
+}
+
+.lista_niños{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.lista_niños li{
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .lists_background{
+        flex-direction: column;
+        justify-content: center;
+    }  
+
+    .arreglo_tablet{
+        flex-direction: row;
+        justify-content: center;
+    }  
+
+    .search_btn{
+        padding: 5px;
+    }   
+
+    .lists_container{
+        width: 80%;
+    }   
+
+    .goodlist_btn{
+        padding: 5px;
+    }  
+
+    .badlist_btn{
+        padding: 5px;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .lists_background{
+        width: 70%;
+        height: 90%;
+    }    
+    
+    .arreglo_tablet{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }   
+
+    .search_container{
+        width: 90%;
+        padding: 0;
+    } 
+
+    #search_name{
+        padding: 5px;
+    } 
+
+    .btn_listas{
+        padding: 0 20px 0 0;
+    }  
+}

@@ -1,0 +1,158 @@
+
+#game3{
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #000;
+    text-align: center;
+}
+
+.game3_instructions {
+    width: 30%;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.game3_title {
+    font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+    margin: 10px;
+}
+
+.game3_text {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin: 10px;
+}
+
+.game3_stage {
+    position: relative;
+    width: 50%;
+    height: 90%;
+    background-color: #f0f8ff;
+    border: 2px solid #000;
+}
+
+.game3_gift {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    user-select: none;
+
+}
+
+
+.grinch {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url('../images/grinch.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    user-select: none;
+
+}
+
+.grinch:hover {
+    transform: scale(1.1);
+}
+
+.game3_controls {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.game3_timer {
+    font-size: clamp(1rem, 2vw, 1.8rem);
+    margin: 10px;
+}
+
+.game3_lives {
+    display: flex;
+    gap: 5px;
+}
+
+.game3_life {
+    font-size: 2rem;
+}
+
+.game3_start-btn {
+    padding: 10px 20px;
+    margin: 15px;
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.game3_start-btn:hover {
+    background-color: #45a049;
+}
+
+.game3_start-btn:disabled {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+
+.game3_message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 10;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    #game3 {
+        flex-direction: column;
+    }
+
+    .game3_instructions {
+        width: 90%;
+    }
+
+    .game3_stage {
+        width: 90%;
+        height: 50%;
+    }
+
+    .game3_life {
+        width: 30px;
+        height: 30px;
+        font-size: 2rem;
+    }
+
+    .game3_controls {
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .game3_start-btn {
+        width: 30%;
+        margin: 0;
+        overflow: hidden;
+    }
+}

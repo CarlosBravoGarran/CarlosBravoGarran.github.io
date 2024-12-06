@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva tu experiencia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="notification-container"></div>
+    <h1 class="book_title">Reserva Tu Experiencia</h1>
+    <div class="book-steps">
+        <div class="step-container step1">
+            <div class="book-form_container">
+                <h2 class="book-form_title">Información de contacto</h2>
+                <form class="book-form">
+                    <div class="book-form_group">
+                        <input type="text" id="book_name" name="name" required>
+                        <label for="book_name">Nombre</label>
+                    </div>
+                    <div class="book-form_group">
+                        <input type="email" id="book_email" name="email" required>
+                        <label for="book_email">Email</label>
+                    </div>
+                    <div class="book-form_group">
+                        <input type="tel" id="book_phone" name="phone" required>
+                        <label for="book_phone">Teléfono</label>
+                    </div>
+                    <div class="book-form_group">
+                        <input class="book-date_input" type="date" id="book_date" name="date" required>
+                        <label class="book-date_label" for="book_date">Fecha de reserva</label>
+                    </div>
+                    <div class="book-form_group">
+                        <input type="number" id="book_people" name="people" required>
+                        <label for="book_people">Número de personas</label>
+                    </div>
+                    <h3 class="book_price">El precio total es: <span></span>€</h3>
+                    <button type="submit" class="book_btn">Reservar</button>
+                </form>
+            </div>
+        </div>
+        <div class="step-container step2">
+            <div class="book_payment">
+                <h2 class="book_payment-title">Pago</h2>
+                <div class="book_payment-methods">
+                    <div class="book_payment-method">
+                        <input type="radio" id="book_payment-paypal" name="payment" value="paypal">
+                        <label for="book_payment-paypal">Paypal</label>
+                    </div>
+                    <div class="book_payment-method">
+                        <input type="radio" id="book_payment-card" name="payment" value="card">
+                        <label for="book_payment-card">Tarjeta de crédito</label>
+                    </div>
+                </div>
+                <div class="card-payment">
+                    <form class="card_form">
+                        <div class="payment-form_group">
+                            <input type="text" id="card_name" name="card_name" required>
+                            <label for="card_name">Titular de la tarjeta</label>
+                        </div>
+                        <div class="payment-form_group">
+                            <input type="text" id="card_number" name="card_number" required>
+                            <label for="card_number">Número de tarjeta</label>
+                        </div>
+                        <div class="check_card">
+                            <div class="payment-form_group">
+                                <input class="expiry_input" type="month" id="card_expiry" name="card_expiry" required>
+                                <label class="expiry_label" for="card_expiry">Fecha de expiración</label>
+                            </div>
+                            <div class="payment-form_group">
+                                <input type="text" id="card_cvv" name="card_cvv" required>
+                                <label for="card_cvv">CCV</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="paypal-payment">
+                    <form class="paypal_form">
+                        <div class="payment-form_group">
+                            <input type="email" id="paypal_email" name="paypal_email" required>
+                            <label for="paypal_email">Email de Paypal</label>
+                        </div>
+                        <div class="payment-form_group">
+                            <input type="password" id="paypal_password" name="paypal_password" required>
+                            <label for="paypal_password">Contraseña de Paypal</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="book-payment_btns">
+                    <button class="book-payment_back">Atrás</button>
+                    <button class="book-payment_btn">Pagar</button>
+                </div>
+            </div>
+        </div>
+        <div class="step-container step3">
+            <div class="book_confirm">
+                <h2 class="book_confirm-title">Confirmación</h2>
+                <div class="book_confirm-info">
+                    <p>Nombre: <span id="book_confirm-name"></span></p>
+                    <p>Email: <span id="book_confirm-email"></span></p>
+                    <p>Teléfono: <span id="book_confirm-phone"></span></p>
+                    <p>Fecha de reserva: <span id="book_confirm-date"></span></p>
+                    <p>Número de personas: <span id="book_confirm-people"></span></p>
+                    <p>Precio Total:<span id="book_confirm-price"></span></p>
+                </div>
+                <div class="book-confirm_btns">
+                    <button class="book-confirm_back">Atrás</button>
+                    <button class="book-confirm_btn">Confirmar</button>
+                </div>
+            </div>
+        </div>
+        <div class="step-wizard">
+            <div class="step-wizard_step">
+                <div class="step-wizard_icon">1</div>
+                <div class="step-wizard_title">Informacion de Contacto</div>
+            </div>
+            <div class="step-wizard_step">
+                <div class="step-wizard_icon">2</div>
+                <div class="step-wizard_title">Método de Pago</div>
+            </div>
+            <div class="step-wizard_step">
+                <div class="step-wizard_icon">3</div>
+                <div class="step-wizard_title">Confirmación</div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/book-experience.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

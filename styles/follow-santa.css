@@ -1,0 +1,100 @@
+
+
+#follow-santa {
+    height: 100vh;
+    background-color: var(--background-color-global);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.follow-santa_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.map-container {
+    width: 75%;
+    height: 75%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    border-radius: inherit;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+}
+
+
+.search-container {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.country-search {
+    padding: 5px;
+    font-size: 14px;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.country-search:hover {
+    cursor: text;
+}
+
+.search-btn {
+    width: 40%;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: var(--color-button2);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 4px 4px 1px rgba(200, 0, 0);
+}
+
+.search-btn:hover {
+    background-color: #e00;
+}
+
+.search-btn:active {
+    box-shadow: inset 4px 4px 1px rgba(200, 0, 0);
+}
+
+.locate-santa-btn {
+    padding: 5px 10px;
+    margin: 15px 0;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: var(--color-button3);
+    color: var(--color-text2);
+    border-radius: 5px;
+    box-shadow: 4px 4px 1px #4c9c68;
+}
+
+.locate-santa-btn:hover {
+    background-color: #29e057;
+}
+
+.locate-santa-btn:active {
+    box-shadow: inset 4px 4px 1px #4c9c68;
+}

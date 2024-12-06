@@ -1,0 +1,176 @@
+
+
+#game2 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #000;
+}
+
+.game2_instructions {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.game2_title {
+    font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+    margin: 10px;
+}
+
+.game2_text {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin: 10px;
+}
+
+.game2_main{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.game2_word {
+    font-size: clamp(1rem, 2vw, 2.2rem);
+    margin: 10px;
+}
+
+.game2_controls{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.game2_timer {
+    font-size: clamp(1rem, 2vw, 1.8rem);
+    margin: 10px;
+}
+
+.timer_display {
+    font-weight: bold;
+}
+
+.game2_palette {
+    margin-top: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.color-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.color-btn:hover {
+    transform: scale(1.2);
+}
+
+
+.game2_start {
+    width: 75%;
+    margin-top: 20px;
+    padding: 10px 10px;
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
+    cursor: pointer;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.game2_start:hover {
+    background-color: #45a049;
+}
+
+.game2_canvas {
+    border: 1px solid black;
+    background-color: white;
+    width: 100%;
+    height: 90%;
+    cursor: crosshair;
+}
+
+.random-word {
+    font-weight: bold;
+}
+
+
+.game2_message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes messageAnimation {
+    0% {
+        font-size: 0;
+        opacity: 0;
+    }
+    50% {
+        font-size: 3rem;
+        opacity: 1;
+    }
+    100% {
+        font-size: 0;
+        opacity: 0;
+    }
+}
+
+.message-animate {
+    animation: messageAnimation 2s ease-in-out forwards;
+}   
+
+@media screen and (max-width: 768px) {
+    
+    #game2 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .game2_instructions {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .game2_main {
+        width: 80%;
+        height: 50%;
+    }
+
+    .game2_controls {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .game2_word{
+        width: 30%;
+    }
+
+    .game2_start {
+        width: 20%;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+}

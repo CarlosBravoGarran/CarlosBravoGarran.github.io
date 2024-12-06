@@ -1,0 +1,500 @@
+/* Contenedor de la sección #home */
+#home {
+    height: 100vh;
+    background-image: url(../images/taller2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imagen-interactiva {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.imagen-interactiva_icono{
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.texto-hover {
+    opacity: 0;
+    color: var(--color-text1); 
+    background-color: var(--color-background-box2);
+    margin-bottom: 10px; 
+    padding: 10px;
+    border-radius: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.imagen-interactiva:hover .texto-hover {
+    opacity: 1;
+}
+
+.imagen-interactiva:hover .imagen-interactiva_icono {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.imagen-interactiva_historia {
+    top: 55%; 
+    left: 60%;
+}
+
+@media screen and (max-width: 900px) {
+    .imagen-interactiva_historia {
+        left: 70%;
+    }
+}
+
+.imagen-interactiva_icono_historia {
+    width: 70px;
+}
+
+.imagen-interactiva_calendario {
+    top: 20%; 
+    left: 40%;
+}
+
+.imagen-interactiva_icono_calendario {
+    width: 50px;
+}
+
+.imagen-interactiva_mapa {
+    top: 25%; 
+    left: 58%;
+}
+
+@media screen and (max-width: 900px) {
+    .imagen-interactiva_mapa{
+        left: 65%;
+    }
+}
+
+.imagen-interactiva_icono_mapa {
+    width: 55px;
+}
+
+.imagen-interactiva_cartas {
+    top: 58%; 
+    left: 48%;
+}
+
+.imagen-interactiva_icono_cartas {
+    width: 40px;
+}
+
+.imagen-interactiva_videollamada {
+    top: 65%; 
+    left: 43%;
+}
+
+@media screen and (max-width: 1000px) {
+    .imagen-interactiva_videollamada  {
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .imagen-interactiva_videollamada  {
+        left: 36%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imagen-interactiva_videollamada  {
+        left: 32%;
+    }
+}
+
+.imagen-interactiva_icono_videollamada {
+    width: 30px;
+}
+
+.imagen-interactiva_nombre-elfo {
+    top: 68%; 
+    left: 34%;
+}
+
+@media screen and (max-width: 1400px) {
+    .imagen-interactiva_nombre-elfo {
+        top: 66%; 
+        left: 32%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .imagen-interactiva_nombre-elfo {
+        left: 31%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .imagen-interactiva_nombre-elfo {
+        left: 29%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .imagen-interactiva_nombre-elfo {
+        left: 28%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .imagen-interactiva_nombre-elfo {
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .imagen-interactiva_nombre-elfo {
+        left: 23%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .imagen-interactiva_nombre-elfo {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .imagen-interactiva_nombre-elfo {
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .imagen-interactiva_nombre-elfo {
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imagen-interactiva_nombre-elfo {
+        left: 9%;
+    }
+}
+
+.imagen-interactiva_icono_nombre-elfo {
+    width: 22px;
+}
+
+.imagen-interactiva_conviertete_elfo {
+    top: 59%; 
+    left: 28%;
+}
+
+@media screen and (max-width: 1400px) {
+    .imagen-interactiva_conviertete_elfo {
+        top: 58%; 
+        left: 26%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .imagen-interactiva_conviertete_elfo {
+        top: 57%; 
+        left: 24%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .imagen-interactiva_conviertete_elfo {
+        top: 58%; 
+        left: 21%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .imagen-interactiva_conviertete_elfo {
+        left: 19%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .imagen-interactiva_conviertete_elfo {
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .imagen-interactiva_conviertete_elfo {
+        left: 11%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .imagen-interactiva_conviertete_elfo {
+        left: 7%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .imagen-interactiva_conviertete_elfo {
+        left: 2%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .imagen-interactiva_conviertete_elfo { 
+        top: 84%;
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imagen-interactiva_conviertete_elfo { 
+        left: 12%;
+    }
+}
+
+.imagen-interactiva_icono_conviertete_elfo {
+    width: 23px;
+}
+
+.imagen-interactiva_listas {
+    top: 17%; 
+    left: 78%;
+}
+
+@media screen and (max-width: 1400px) {
+    .imagen-interactiva_listas {
+        top: 19%; 
+        left: 80%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .imagen-interactiva_listas {
+        left: 83%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .imagen-interactiva_listas {
+        left: 86%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .imagen-interactiva_listas {
+        left: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .imagen-interactiva_listas {
+        left: 95%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .imagen-interactiva_listas {
+        left: 97%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .imagen-interactiva_listas {
+        top: 77%;
+        left: 70%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .imagen-interactiva_listas {
+        left: 74%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .imagen-interactiva_listas {
+        left: 76%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imagen-interactiva_listas {
+        left: 78%;
+    }
+}
+
+.imagen-interactiva_icono_listas {
+    width: 32px;
+}
+
+.imagen-interactiva_juegos {
+    top: 56%; 
+    left: 37%;
+}
+
+@media screen and (max-width: 1300px) {
+    .imagen-interactiva_juegos {
+        left: 35%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .imagen-interactiva_juegos {
+        left: 32%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .imagen-interactiva_juegos {
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .imagen-interactiva_juegos {
+        left: 28%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .imagen-interactiva_juegos {
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .imagen-interactiva_juegos {
+        left: 22%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imagen-interactiva_juegos {
+        left: 17%;
+    }
+}
+
+.imagen-interactiva_icono_juegos {
+    width: 30px;
+}
+
+.imagen-interactiva_galeria {
+    top: 21%; 
+    left: 32%;
+}
+
+@media screen and (max-width: 1400px) {
+    .imagen-interactiva_galeria {
+        top: 23%; 
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .imagen-interactiva_galeria { 
+        left: 28%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .imagen-interactiva_galeria { 
+        left: 26%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .imagen-interactiva_galeria { 
+        left: 22%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .imagen-interactiva_galeria { 
+        left: 18%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .imagen-interactiva_galeria { 
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .imagen-interactiva_galeria { 
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .imagen-interactiva_galeria { 
+        left: 6%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imagen-interactiva_galeria { 
+        left: 3%;
+    }
+}
+
+.imagen-interactiva_icono_galeria {
+    width: 32px;
+}
+
+.imagen-interactiva_experiencia {
+    top: 25%; 
+    left: 20%;
+}
+
+@media screen and (max-width: 1400px) {
+    .imagen-interactiva_experiencia {
+        top: 25%; 
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .imagen-interactiva_experiencia {
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .imagen-interactiva_experiencia {
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .imagen-interactiva_experiencia {
+        top: 77%;
+        left: 22%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .imagen-interactiva_experiencia {
+        left: 18%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .imagen-interactiva_experiencia {
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .imagen-interactiva_experiencia {
+        left: 12%;
+    }
+}
+
+.imagen-interactiva_icono_experiencia {
+    width:55px;
+}

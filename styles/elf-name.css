@@ -1,0 +1,121 @@
+
+#elf-name{
+    height: 100vh;
+    background-color: var(--color-background-global);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elf-name_image{
+    position:absolute;
+    transform: translateX(200%)translateY(-170%);
+    width: 10%;
+    max-width: 70%;
+    min-width: 50px;
+    height: 20%;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1000px) {
+    .elf-name_image{
+        transform: translateX(200%)translateY(-350%);
+        width: 10%;
+        height: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .elf-name_image{
+        width: 10%;
+        height: 10%;
+    }
+    
+}
+
+.elf-name_info{
+    position: relative;
+    width: 60%;
+    max-width: 70%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-background-box2);
+    border-radius: 20px;
+    font-size: clamp(0.7rem, 1.9vw, 1.3rem);
+}
+
+.elf-name_input-output{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+    .elf-name_input-output{
+        flex-direction: column;
+    }
+}
+
+.elf-name_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+    max-width: 50%;
+}
+
+.elf-name_ouput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#elf-name_input{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--color-background-box);
+    border-radius: 10px;
+}
+
+.elf-name_button{
+    padding: 10px;
+    border: 1px solid var(--color-background-box);
+    border-radius: 5px;
+    background-color: var(--color-button1);
+    color: var(--color-text2);
+    cursor: pointer;
+    box-shadow: 4px 4px 1px rgba(0, 0, 0);
+    border-radius: 8px;
+    border: 1px solid #000;
+    transition: all 0.2s ease-in-out;
+}
+
+@font-face {
+    font-family: 'Elf';
+    src: url('../fonts/halfelvenbold.ttf') format('truetype');
+}
+
+.elf-name_result_title{
+    color: var(--color-text1);
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+#elf-name_result{
+    font-family: 'Elf';
+    color: var(--color-cursor);
+    margin-top: 15px;
+    font-size: clamp(1.5rem, 6vw, 5rem);
+    margin-bottom: 0;
+}
