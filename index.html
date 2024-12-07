@@ -25,8 +25,7 @@
                 <div class="line line2"></div>
             </div>
             <div class="search-bar">
-                <label for="search-text" class="search-label" >Buscar</label>
-                <input type="text" id="search-text" class="search-text" placeholder="Buscar..." />
+                <input type="text" aria-label="Buscar sección" class="search-text" placeholder="Buscar..." />
                 <img class="search-icon" src="images/search_icon.webp" alt="Icono lupa búsqueda">
                 <ul class="suggestions" id="suggestions"></ul>
             </div>
@@ -37,8 +36,8 @@
         </div>
         <div class="nav-bar_modo-oscuro">
             <img class="modo-oscuro_icon" src="images/sol_luna.png" alt="Icono modo claro/oscuro">
-            <label class="switch"> Tema claro/oscuro
-                <input type="checkbox" id="modoOscuroSwitch">
+            <label class="switch"> Tema
+                <input aria-label="Cambiar tema" type="checkbox" id="modoOscuroSwitch">
                 <span class="slider"></span>
             </label>
         </div>
@@ -269,8 +268,7 @@
             <h2 class="title follow-santa_title">Sigue a Santa</h2>
             <div class="content follow-santa_content">
                 <div class="search-container">
-                    <label for="country-search" class="search-label">Busca un país</label>
-                    <input type="text" id="country-search" class="country-search" placeholder="Escribe un país" />
+                    <input type="text" aria-label="Buscar país" id="country-search" class="country-search" placeholder="Escribe un país" />
                     <button class="search-btn">Calcular distancia</button>
                 </div>
                 <div class="map-container">
@@ -589,12 +587,12 @@
                 <p> ¡Mantente informado! </p>
             </div>
         </div>
-        <button class="help-button" onclick="togglePopupAyuda()">❓</button>
+        <button class="help-button">❓</button>
         <div id="help-popup" class="popup-ayuda hidden">
             <div class="popup-ayuda-content">
-                <span class="close-ayuda-button" onclick="togglePopupAyuda()">x</span>
+                <span class="close-ayuda-button">x</span>
                 <h3>¿En qué necesitas ayuda?</h3>
-                <form  id= "help-form" onsubmit="enviarMensajeAyuda(event)">
+                <form  id= "help-form">
                     <div>
                         <label for="consulta">Describe tu problema:</label>
                         <textarea class = "caja-escribir-ayuda" id="consulta" name="consulta" rows="4" required placeholder="Escribe aquí tu problema"></textarea>

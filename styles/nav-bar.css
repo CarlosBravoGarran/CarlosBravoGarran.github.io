@@ -220,13 +220,6 @@
     height: auto;
 }
 
-.search-bar label{
-    position: fixed;
-    top: -1000px;
-    left: -1000px;
-    color: transparent;
-}
-
 @media screen and (max-width: 600px) {
     .web-name_logo {
         width: 30px;

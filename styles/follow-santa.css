@@ -40,13 +40,6 @@
     z-index: 0;
 }
 
-.search-container label{
-    position: fixed;
-    top: -1000px;
-    left: -1000px;
-    color: transparent;
-}
-
 .search-container {
     margin: 10px;
     display: flex;
