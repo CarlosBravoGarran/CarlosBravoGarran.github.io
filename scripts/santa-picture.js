@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Superponer el filtro
         const overlay = new Image();
-        overlay.src = './images/selfie_elf.png';
+        overlay.src = './images/selfie_elf.webp';
         overlay.onload = () => {
             ctx.drawImage(
                 overlay,
