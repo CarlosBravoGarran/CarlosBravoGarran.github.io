@@ -25,7 +25,8 @@
                 <div class="line line2"></div>
             </div>
             <div class="search-bar">
-                <input type="text" class="search-text" placeholder="Buscar..." />
+                <label for="search-text" class="search-label" >Buscar</label>
+                <input type="text" id="search-text" class="search-text" placeholder="Buscar..." />
                 <img class="search-icon" src="images/search_icon.webp" alt="Icono lupa búsqueda">
                 <ul class="suggestions" id="suggestions"></ul>
             </div>
@@ -36,7 +37,7 @@
         </div>
         <div class="nav-bar_modo-oscuro">
             <img class="modo-oscuro_icon" src="images/sol_luna.png" alt="Icono modo claro/oscuro">
-            <label class="switch"> 
+            <label class="switch"> Tema claro/oscuro
                 <input type="checkbox" id="modoOscuroSwitch">
                 <span class="slider"></span>
             </label>
@@ -267,7 +268,8 @@
             <h2 class="title follow-santa_title">Sigue a Santa</h2>
             <div class="content follow-santa_content">
                 <div class="search-container">
-                    <input type="text" class="country-search" placeholder="Escribe un país" />
+                    <label for="country-search" class="search-label">Busca un país</label>
+                    <input type="text" id="country-search" class="country-search" placeholder="Escribe un país" />
                     <button class="search-btn">Calcular distancia</button>
                 </div>
                 <div class="map-container">
@@ -405,7 +407,7 @@
                 <div class="content lists_content">
                     <div class="arreglo_tablet">
                         <div class="search_container">
-                            <p class="search_lists"> ¡Escribe tu nombre y descubre el gran secreto! ¿Estás en la lista de los niños buenos o en la de los traviesos? ¡Papá Noel lo sabe todo!</p>
+                            <label for="search_name" class="search_lists"> ¡Escribe tu nombre y descubre el gran secreto! ¿Estás en la lista de los niños buenos o en la de los traviesos? ¡Papá Noel lo sabe todo!</label>
                             <input type="text" id="search_name" placeholder="Escribe tu nombre"/>
                             <button class="search_btn" id = "btn-search">Buscar</button>
                         </div>
@@ -474,12 +476,12 @@
                             <div class="game2_message"></div>
                             <canvas class="game2_canvas"></canvas>
                             <div class="game2_palette">
-                                <button class="color-btn" style="background-color: #ff0000;"></button>
-                                <button class="color-btn" style="background-color: #00ff00;"></button>
-                                <button class="color-btn" style="background-color: #0000ff;"></button>
-                                <button class="color-btn" style="background-color: #ffff00;"></button>
-                                <button class="color-btn" style="background-color: #000000;"></button>
-                                <button class="color-btn" style="background-color: #ffffff;"></button>
+                                <button class="color-btn" aria-label="Red colour" style="background-color: #ff0000;"></button>
+                                <button class="color-btn" aria-label="Green colour" style="background-color: #00ff00;"></button>
+                                <button class="color-btn" aria-label="Blue colour" style="background-color: #0000ff;"></button>
+                                <button class="color-btn" aria-label="Yellow colour" style="background-color: #ffff00;"></button>
+                                <button class="color-btn" aria-label="Black colour" style="background-color: #000000;"></button>
+                                <button class="color-btn" aria-label="White colour" style="background-color: #ffffff;"></button>
                             </div>
                         </div>
                         <div class="game2_controls">
