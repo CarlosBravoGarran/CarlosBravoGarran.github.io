@@ -1,4 +1,3 @@
-
 #letters{
     height: 100vh;
     background-color: var(--color-background-global);
@@ -9,52 +8,18 @@
 
 .sello-image{
     position: absolute;
-    width: 15%;
-    transform: translateX(300px) translateY(-250px);
-}
-
-@media screen and (max-width:900px){
-    .sello-image{    
-        width: 20%;
-    }
-}
-
-@media screen and (max-width:768px){
-    .sello-image{    
-        width: 25%;
-        transform: translateX(250px) translateY(-250px);
-    }
-}
-
-@media screen and (max-width:650px){
-    .sello-image{    
-        width: 20%;
-    }
-}
-
-@media screen and (max-width:600px){
-    .sello-image{    
-        transform: translateX(110px) translateY(-250px);
-    }
+    width: 10%;
+    right: 25vw;
+    transform: translateY(-70px);
 }
 
 .formulario_enviar_carta{
-    padding: 60px;
+    padding: 5px;
     background-color: var(--color-background-box);
     border-radius: 20px;
-    width: 80vh;
-}
-
-@media screen and (max-width:768px){
-    .formulario_enviar_carta{    
-        width: 70vh;
-    }
-}
-
-@media screen and (max-width:600px){
-    .formulario_enviar_carta{    
-        width: 50vh;
-    }
+    width: 40vw;
+    max-height: 530px;
+    min-width: 300px;
 }
 
 .nom_email{
@@ -62,23 +27,9 @@
     padding-left: 15px;
 }
 
-@media screen and (max-width:600px){
-    .nom_email{    
-        flex-direction: column;
-        padding-left: 0px;
-    }
-}
-
 .lugar{
     display: flex;
     padding-left: 15px;
-}
-
-@media screen and (max-width:600px){
-    .lugar{    
-        flex-direction: column;
-        padding-left: 0px;
-    }
 }
 
 .nombre_etiqueta{
@@ -89,32 +40,15 @@
     margin-bottom: 10px;
 }
 
-@media screen and (max-width:600px){
-    .nombre_etiqueta{    
-        margin-bottom: 5px;
-    }
-}
-
 .caja_label{
     width: 100%;
-    padding: 30px 30px 30px 10px;
-}
-
-@media screen and (max-width:768px){
-    .caja_label{ 
-        padding: 30px 30px 20px 10px;
-    }
-}
-
-@media screen and (max-width:600px){
-    .caja_label{    
-        padding: 10px 30px 10px 30px;
-    }
+    padding: 5% 5% 5% 10px;
 }
 
 .formulario_input{
     padding: 10px;
     width: 100%;
+    height: 60%;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: clamp(0.7rem, 1.9vw, 1rem);
@@ -125,12 +59,6 @@
 .mi_carta{
     display: flex;
     padding-left: 15px;
-}
-
-@media screen and (max-width:600px){
-    .mi_carta{    
-        padding-left: 0px;
-    }
 }
 
 .formulario_input_mi_carta{
@@ -148,19 +76,6 @@
     border-radius: 10px;
 }
 
-@media screen and (max-width:768px){
-    .formulario_input_mi_carta{ 
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width:600px){
-    .formulario_input_mi_carta{    
-        font-size: 0.7em;
-        padding: 5px;
-    }
-}
-
 .boton_enviar{
     display: flex;
     justify-content: center;
@@ -168,6 +83,7 @@
 
 .formulario_submit{
     padding: 10px;
+    margin-bottom: 10px;
     width: 100px;
     height: 30%;
     background-color: var(--color-button2);
@@ -207,7 +123,6 @@
     }
 }
 
-
 .carta-personalizada {
     position: fixed;
     top: 50%;
@@ -235,4 +150,47 @@
     padding: 5px;
     cursor: pointer;
     border-radius: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .sello-image {
+        transform:translateX(100px) translateY(-50px);
+    }
+    .formulario_enviar_carta {
+        width: 70vh;
+    }
+    .caja_label {
+        padding: 30px 30px 20px 10px;
+    }
+    .formulario_input_mi_carta {
+        font-size: 0.9em;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .sello-image {
+        transform: translateX(60px) translateY(-30px);
+    }
+    .formulario_enviar_carta {
+        width: 50vh;
+    }
+    .nom_email, .lugar {
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    .nombre_etiqueta {
+        margin-bottom: 5px;
+    }
+    .caja_label {
+        padding: 10px 30px 10px 30px;
+    }
+    .mi_carta {
+        padding-left: 0px;
+    }
+    .formulario_input_mi_carta {
+        font-size: 0.7em;
+        padding: 5px;
+    }
 }
